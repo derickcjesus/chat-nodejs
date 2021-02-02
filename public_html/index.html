@@ -1,12 +1,104 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/base.css">
-    <title>Chat com Node</title>
-</head>
-<body>
-    <h1>ola</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Chat com NodeJS</title>
+        <link rel="stylesheet" type="text/css" href="style/base.css" />
+    </head>
+    <body>
+        <div id="box">
+            <div id="lateral">
+                <div id="user">
+                    <div id="imagem">
+                        <img src="imagem/pessoa.png" />
+                    </div>
+                    <div id="texto">
+                        <h1>Derick de Jesus</h1>
+                        <h2>Meu status</h2>
+                    </div>
+                </div>
+                <ul id="listaContatos">
+                    <li class="title">Contatos (2)</li>
+                    <li>
+                        <div id="imagem">
+                            <img src="imagem/pessoa.png" />
+                        </div>
+                        <div id="texto">
+                            <h1>João</h1>
+                        </div>
+                    </li>
+                    <li class="new">
+                        <div id="imagem">
+                            <img src="imagem/pessoa.png" />
+                        </div>
+                        <div id="texto">
+                            <h1>Lucas <span class="number">1</span></h1>
+                        </div>
+                    </li>
+                    <li class="title">Grupos (1)</li>
+                    <li>
+                        <div id="imagem">
+                            <img src="imagem/pessoa.png" />
+                        </div>
+                        <div id="texto">
+                            <h1>Trabalho</h1>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="chat">
+                <div id="usuario">
+                    <div id="lineTop">
+                        <i class="hashtag fas fa-hashtag"></i>
+                        <h1>Trabalho</h1> 
+                        <div id="first" class="icone">
+                            <i class="far fa-user"></i>
+                            <span class="number">5</span>
+                        </div>
+                        <div class="icone">
+                            <i class="far fa-comment-alt"></i>
+                            <span class="number">5.7 K</span>
+                        </div>
+                    </div>
+                    <div id="lineBottom">
+                        <h2>Descricao do grupo</h2>
+                    </div>
+                </div>
+                <ul id="conversa">
+                    <li>
+                        <div id="header">
+                            <img src="imagem/pessoa.png" />
+                            <div id="info">
+                                <span class="nome">Pedro</span>
+                                <span class="data">Hoje às 13:41</span>
+                            </div>
+                        </div>
+                        <div id="mensagem">
+                            <p>Esta é uma mensagem</p>
+                            <p>Esta é outra mensagem</p>
+                        </div>
+                    </li>                    
+                    <li class="me">
+                        <div id="header">
+                            <img src="imagem/pessoa.png" />
+                            <div id="info">
+                                <span class="nome">Derick de Jesus</span>
+                                <span class="data">Hoje às 13:41</span>
+                            </div>
+                        </div>
+                        <div id="mensagem">
+                            <p>Esta é uma mensagem</p>
+                            <p>Esta é outra mensagem</p>
+                        </div>
+                    </li>     
+                </ul>
+                <div id="enviar">
+                    <div id="area">
+                        <textarea placeholder="Escreva aqui..."></textarea>
+                        <button><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
