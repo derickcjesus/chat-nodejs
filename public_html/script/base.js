@@ -10,5 +10,12 @@ $(function(){
         $("ul#conversa").html(" ")
         $("h1.conversaTitle").html(nome)
         $("textarea").attr("idTo", id)
+    });
+
+    var socket = io.connect("http://localhost/");
+
+    socket.emit("message", "Olá meu brother servidor, aqui é o Cliente")
+    socket.on("message", mensagem => {
+        alert(mensagem);
     })
 });

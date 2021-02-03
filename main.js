@@ -1,7 +1,10 @@
 const express = require("express");
-const path = require("path");
-
 const app = express();
+
+const path = require("path");
+const http = require("http").Server(app);
+const io = require("socket.io")(http);
+
 
 app.use(express.static("public_html"));
 
@@ -10,4 +13,14 @@ app.get("/", function(req, res){
 })
 
 
-app.listen("80");
+io.on("connection", client => {
+    client.on("message", mensagem => {
+        console.log(mensagem)
+        client.emit("message", "Fala meu brother, aqui é o seu servidor")
+    });
+});
+
+
+http.listen("80", function(){
+    console.log("Servidor ativo na porta 80");
+});
