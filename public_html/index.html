@@ -13,13 +13,13 @@
                         <img src="imagem/pessoa.png" />
                     </div>
                     <div id="texto">
-                        <h1>Derick de Jesus</h1>
+                        <h1 class="myname"></h1>
                         <h2>Meu status</h2>
                     </div>
                 </div>
                 <ul id="listaContatos">
                     <li class="title">Contatos (2)</li>
-                    <li>
+                    <li class="contato" userName="Joao" userID="1">
                         <div id="imagem">
                             <img src="imagem/pessoa.png" />
                         </div>
@@ -27,15 +27,15 @@
                             <h1>João</h1>
                         </div>
                     </li>
-                    <li class="new">
+                    <li class="contato new" userName="Pedro" userID="2">
                         <div id="imagem">
                             <img src="imagem/pessoa.png" />
                         </div>
                         <div id="texto">
-                            <h1>Lucas <span class="number">1</span></h1>
+                            <h1>Pedro <span class="number">1</span></h1>
                         </div>
                     </li>
-                    <li class="title">Grupos (1)</li>
+                    <!--<li class="title">Grupos (1)</li>
                     <li>
                         <div id="imagem">
                             <img src="imagem/pessoa.png" />
@@ -43,14 +43,14 @@
                         <div id="texto">
                             <h1>Trabalho</h1>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div id="chat">
                 <div id="usuario">
                     <div id="lineTop">
                         <i class="hashtag fas fa-hashtag"></i>
-                        <h1>Trabalho</h1> 
+                        <h1 class="conversaTitle"></h1> 
                         <div id="first" class="icone">
                             <i class="far fa-user"></i>
                             <span class="number">5</span>
@@ -94,11 +94,14 @@
                 </ul>
                 <div id="enviar">
                     <div id="area">
-                        <textarea placeholder="Escreva aqui..."></textarea>
+                        <textarea id="idTo" placeholder="Escreva aqui..."></textarea>
                         <button><i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script src="script/jquery.js"></script>
+        <script src="script/base.js"></script>
     </body>
 </html>
